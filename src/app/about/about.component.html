@@ -1,0 +1,6 @@
+<p>
+  this is aboue <a href="" (click)="sendHome()"><strong>Take me back</strong></a>
+</p>
+<p class="life-container"  *ngFor="let goal of goals; let i=index" [attr.data-index]="i" (click)="removeItem(i)">
+    {{goal}}
+</p>
